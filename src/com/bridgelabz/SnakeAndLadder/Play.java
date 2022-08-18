@@ -8,7 +8,7 @@ public class Play {
 		
 		dice = (int) (Math.random() * 6 + 1);
 		diceCount++;
-        System.out.println("\n Dice : "+dice);
+        System.out.println(" Dice : "+dice);
         
         option = (int) (Math.random() * 3);
 
@@ -29,9 +29,7 @@ public class Play {
 	            }
 	            default -> System.out.println(" Case : No Play");
 	        }
-        
-        System.out.println("\n Player Position : " + playerPosition);
-        
+
 	}
 	
 }
