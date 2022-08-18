@@ -15,6 +15,9 @@ public class Play {
 	            case (1) -> {
 	                System.out.println(" Case : Ladder");
 	                playerPosition += dice;
+	                if (playerPosition > 100) {
+	                	playerPosition -= dice;
+	                }
 	            }
 	            case (2) -> {
 	                System.out.println(" Case : Snake");
