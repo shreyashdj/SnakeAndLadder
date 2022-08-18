@@ -6,8 +6,6 @@ public class Play {
 	
 	void game() {
 		
-		System.out.println(" Player starting Position : " + playerPosition);
-		
 		dice = (int) (Math.random() * 6 + 1);
         System.out.println("\n Dice : "+dice);
         
@@ -21,6 +19,9 @@ public class Play {
 	            case (2) -> {
 	                System.out.println(" Case : Snake");
 	                playerPosition -= dice;
+	                if (playerPosition < 0) {
+	                	playerPosition = 0;
+	                }
 	            }
 	            default -> System.out.println(" Case : No Play");
 	        }
