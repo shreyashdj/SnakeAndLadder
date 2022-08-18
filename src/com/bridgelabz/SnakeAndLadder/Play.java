@@ -2,11 +2,12 @@ package com.bridgelabz.SnakeAndLadder;
 
 public class Play {
 
-	int playerPosition, dice, option;
+	int playerPosition, dice, option, diceCount;
 	
 	void game() {
 		
 		dice = (int) (Math.random() * 6 + 1);
+		diceCount++;
         System.out.println("\n Dice : "+dice);
         
         option = (int) (Math.random() * 3);

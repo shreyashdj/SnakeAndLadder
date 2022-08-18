@@ -15,5 +15,7 @@ public class SnakeAndLadder {
 			play.game();
 		}
 
+		System.out.println("\n NO. OF times Dice rolled to win : " + play.diceCount);
+		
 	}
 }
